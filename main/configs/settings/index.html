@@ -6053,6 +6053,7 @@ More information about prefixed icons can be found in <a href="../services/#icon
 <p>By default the homepage logfile is written to the a <code>logs</code> subdirectory of the <code>config</code> folder. In order to customize this path, you can set the <code>logpath</code> setting. A <code>logs</code> folder will be created in that location where the logfile will be written.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nt">logpath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/logfile/path</span>
 </span></code></pre></div>
+<p>By default, logs are sent both to <code>stdout</code> and to a file at the path specified. This can be changed by setting the <code>LOG_TARGETS</code> environment variable to one of <code>both</code> (default), <code>stdout</code> or <code>file</code>.</p>
 <h2 id="show-docker-stats">Show Docker Stats</h2>
 <p>You can show all docker stats expanded in <code>settings.yaml</code>:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nt">showStats</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
