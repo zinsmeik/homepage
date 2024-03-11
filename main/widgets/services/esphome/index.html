@@ -4990,7 +4990,9 @@
 
 <p>Learn more about <a href="https://esphome.io/">ESPHome</a>.</p>
 <p>Show the number of ESPHome devices based on their state.</p>
-<p>Allowed fields: <code>["total", "online", "offline", "unknown"]</code>.</p>
+<p>Allowed fields: <code>["total", "online", "offline", "offline_alt", "unknown"]</code> (maximum of 4).</p>
+<p>By default ESPHome will only mark devices as <code>offline</code> if their address cannot be pinged. If it has an invalid config or its name cannot be resolved (by DNS) its status will be marked as <code>unknown</code>.
+To group both <code>offline</code> and <code>unknown</code> devices together, users should use the <code>offline_alt</code> field instead. This sums all devices that are <em>not</em> online together.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">esphome</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://esphome.host.or.ip:port</span>
