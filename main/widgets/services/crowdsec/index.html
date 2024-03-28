@@ -6,35 +6,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Docker Configuration">
+        <meta name="description" content="Crowdsec Widget Configuration">
       
       
       
-        <link rel="canonical" href="https://gethomepage.dev/main/configs/docker/">
+        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/crowdsec/">
       
       
-        <link rel="prev" href="../kubernetes/">
+        <link rel="prev" href="../coin-market-cap/">
       
       
-        <link rel="next" href="../custom-css-js/">
+        <link rel="next" href="../customapi/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/favicon.ico">
+      <link rel="icon" href="../../../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2+insiders-4.47.1">
     
     
       
-        <title>Docker - homepage</title>
+        <title>Crowdsec - homepage</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.78d85e4f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.78d85e4f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#using-docker-tls" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,9 +93,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="homepage" class="md-header__button md-logo" aria-label="homepage" data-md-component="logo">
+    <a href="../../.." title="homepage" class="md-header__button md-logo" aria-label="homepage" data-md-component="logo">
       
-  <img src="../../assets/light_squircle@2x.png" alt="logo">
+  <img src="../../../assets/light_squircle@2x.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -117,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker
+              Crowdsec
             
           </span>
         </div>
@@ -243,7 +238,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
     
@@ -263,12 +258,32 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../installation/" class="md-tabs__link">
+        <a href="../../../installation/" class="md-tabs__link">
           
   
     
   
   Installation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../configs/" class="md-tabs__link">
+          
+  
+    
+  
+  Configuration
 
         </a>
       </li>
@@ -285,27 +300,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
-          
-  
-    
-  
-  Configuration
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../widgets/" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -323,7 +318,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../more/troubleshooting/" class="md-tabs__link">
+      <a href="../../../more/troubleshooting/" class="md-tabs__link">
         
   
     
@@ -342,7 +337,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../more/" class="md-tabs__link">
+        <a href="../../../more/" class="md-tabs__link">
           
   
     
@@ -377,9 +372,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="homepage" class="md-nav__button md-logo" aria-label="homepage" data-md-component="logo">
+    <a href="../../.." title="homepage" class="md-nav__button md-logo" aria-label="homepage" data-md-component="logo">
       
-  <img src="../../assets/light_squircle@2x.png" alt="logo">
+  <img src="../../../assets/light_squircle@2x.png" alt="logo">
 
     </a>
     homepage
@@ -429,7 +424,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../.." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -505,7 +500,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../installation/" class="md-nav__link ">
+            <a href="../../../installation/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -548,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/docker/" class="md-nav__link">
+      <a href="../../../installation/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -575,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/k8s/" class="md-nav__link">
+      <a href="../../../installation/k8s/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -602,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/unraid/" class="md-nav__link">
+      <a href="../../../installation/unraid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/source/" class="md-nav__link">
+      <a href="../../../installation/source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,8 +655,6 @@
       
   
   
-    
-  
   
   
     
@@ -692,17 +685,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../configs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -725,7 +718,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -745,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/" class="md-nav__link">
+      <a href="../../../configs/settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -772,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bookmarks/" class="md-nav__link">
+      <a href="../../../configs/bookmarks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -799,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../services/" class="md-nav__link">
+      <a href="../../../configs/services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -826,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../service-widgets/" class="md-nav__link">
+      <a href="../../../configs/service-widgets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kubernetes/" class="md-nav__link">
+      <a href="../../../configs/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,34 +870,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    
-  
-    Docker
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../configs/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -919,154 +888,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-docker-tls" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Using Docker TLS
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-docker-socket-proxy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Using Docker Socket Proxy
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-socket-directly" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Using Socket Directly
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Services
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automatic-service-discovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Automatic Service Discovery
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#widgets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Widgets
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Docker Swarm
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-homepage-instances" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Multiple Homepage Instances
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ordering" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Ordering
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-stats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Show stats
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1079,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom-css-js/" class="md-nav__link">
+      <a href="../../../configs/custom-css-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1110,6 +931,8 @@
       
   
   
+    
+  
   
   
     
@@ -1130,17 +953,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../widgets/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1163,7 +986,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1180,6 +1003,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1422,17 +1247,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../widgets/services/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1455,7 +1280,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1475,7 +1300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/adguard-home/" class="md-nav__link">
+      <a href="../adguard-home/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1502,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/atsumeru/" class="md-nav__link">
+      <a href="../atsumeru/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1529,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/audiobookshelf/" class="md-nav__link">
+      <a href="../audiobookshelf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1556,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/authentik/" class="md-nav__link">
+      <a href="../authentik/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1583,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/autobrr/" class="md-nav__link">
+      <a href="../autobrr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1610,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/azuredevops/" class="md-nav__link">
+      <a href="../azuredevops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1637,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/bazarr/" class="md-nav__link">
+      <a href="../bazarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1664,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/caddy/" class="md-nav__link">
+      <a href="../caddy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1691,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/calendar/" class="md-nav__link">
+      <a href="../calendar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1718,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/calibre-web/" class="md-nav__link">
+      <a href="../calibre-web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1745,7 +1570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/changedetectionio/" class="md-nav__link">
+      <a href="../changedetectionio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1772,7 +1597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/channelsdvrserver/" class="md-nav__link">
+      <a href="../channelsdvrserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1799,7 +1624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/cloudflared/" class="md-nav__link">
+      <a href="../cloudflared/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1826,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/coin-market-cap/" class="md-nav__link">
+      <a href="../coin-market-cap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1850,10 +1675,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../widgets/services/crowdsec/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1868,6 +1700,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1880,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/customapi/" class="md-nav__link">
+      <a href="../customapi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1907,7 +1740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/deluge/" class="md-nav__link">
+      <a href="../deluge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1934,7 +1767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/diskstation/" class="md-nav__link">
+      <a href="../diskstation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1961,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/downloadstation/" class="md-nav__link">
+      <a href="../downloadstation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1988,7 +1821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/emby/" class="md-nav__link">
+      <a href="../emby/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2015,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/esphome/" class="md-nav__link">
+      <a href="../esphome/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2042,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/evcc/" class="md-nav__link">
+      <a href="../evcc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2069,7 +1902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/fileflows/" class="md-nav__link">
+      <a href="../fileflows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2096,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/flood/" class="md-nav__link">
+      <a href="../flood/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2123,7 +1956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/freshrss/" class="md-nav__link">
+      <a href="../freshrss/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2150,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/fritzbox/" class="md-nav__link">
+      <a href="../fritzbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2177,7 +2010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/gamedig/" class="md-nav__link">
+      <a href="../gamedig/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2204,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/gatus/" class="md-nav__link">
+      <a href="../gatus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2231,7 +2064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/ghostfolio/" class="md-nav__link">
+      <a href="../ghostfolio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2258,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/gitea/" class="md-nav__link">
+      <a href="../gitea/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2285,7 +2118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/glances/" class="md-nav__link">
+      <a href="../glances/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2312,7 +2145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/gluetun/" class="md-nav__link">
+      <a href="../gluetun/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2339,7 +2172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/gotify/" class="md-nav__link">
+      <a href="../gotify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2366,7 +2199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/grafana/" class="md-nav__link">
+      <a href="../grafana/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2393,7 +2226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/hdhomerun/" class="md-nav__link">
+      <a href="../hdhomerun/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2420,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/healthchecks/" class="md-nav__link">
+      <a href="../healthchecks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2447,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/homeassistant/" class="md-nav__link">
+      <a href="../homeassistant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2474,7 +2307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/homebox/" class="md-nav__link">
+      <a href="../homebox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2501,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/homebridge/" class="md-nav__link">
+      <a href="../homebridge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2528,7 +2361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/iframe/" class="md-nav__link">
+      <a href="../iframe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2555,7 +2388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/immich/" class="md-nav__link">
+      <a href="../immich/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2582,7 +2415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/jackett/" class="md-nav__link">
+      <a href="../jackett/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2609,7 +2442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/jdownloader/" class="md-nav__link">
+      <a href="../jdownloader/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2636,7 +2469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/jellyfin/" class="md-nav__link">
+      <a href="../jellyfin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2663,7 +2496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/jellyseerr/" class="md-nav__link">
+      <a href="../jellyseerr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2690,7 +2523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/kavita/" class="md-nav__link">
+      <a href="../kavita/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2717,7 +2550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/komga/" class="md-nav__link">
+      <a href="../komga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2744,7 +2577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/kopia/" class="md-nav__link">
+      <a href="../kopia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2771,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/lidarr/" class="md-nav__link">
+      <a href="../lidarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2798,7 +2631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/mastodon/" class="md-nav__link">
+      <a href="../mastodon/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2825,7 +2658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/mealie/" class="md-nav__link">
+      <a href="../mealie/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2852,7 +2685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/medusa/" class="md-nav__link">
+      <a href="../medusa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2879,7 +2712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/mikrotik/" class="md-nav__link">
+      <a href="../mikrotik/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2906,7 +2739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/minecraft/" class="md-nav__link">
+      <a href="../minecraft/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2933,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/miniflux/" class="md-nav__link">
+      <a href="../miniflux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2960,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/mjpeg/" class="md-nav__link">
+      <a href="../mjpeg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2987,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/moonraker/" class="md-nav__link">
+      <a href="../moonraker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3014,7 +2847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/mylar/" class="md-nav__link">
+      <a href="../mylar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3041,7 +2874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/navidrome/" class="md-nav__link">
+      <a href="../navidrome/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3068,7 +2901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/netdata/" class="md-nav__link">
+      <a href="../netdata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3095,7 +2928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/nextcloud/" class="md-nav__link">
+      <a href="../nextcloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3122,7 +2955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/nextdns/" class="md-nav__link">
+      <a href="../nextdns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3149,7 +2982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/nginx-proxy-manager/" class="md-nav__link">
+      <a href="../nginx-proxy-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3176,7 +3009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/nzbget/" class="md-nav__link">
+      <a href="../nzbget/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3203,7 +3036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/octoprint/" class="md-nav__link">
+      <a href="../octoprint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3230,7 +3063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/omada/" class="md-nav__link">
+      <a href="../omada/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3257,7 +3090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/ombi/" class="md-nav__link">
+      <a href="../ombi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3284,7 +3117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/opendtu/" class="md-nav__link">
+      <a href="../opendtu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3311,7 +3144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/openmediavault/" class="md-nav__link">
+      <a href="../openmediavault/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3338,7 +3171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/opnsense/" class="md-nav__link">
+      <a href="../opnsense/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3365,7 +3198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/overseerr/" class="md-nav__link">
+      <a href="../overseerr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3392,7 +3225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/paperlessngx/" class="md-nav__link">
+      <a href="../paperlessngx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3419,7 +3252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/peanut/" class="md-nav__link">
+      <a href="../peanut/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3446,7 +3279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/pfsense/" class="md-nav__link">
+      <a href="../pfsense/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3473,7 +3306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/photoprism/" class="md-nav__link">
+      <a href="../photoprism/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3500,7 +3333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/pialert/" class="md-nav__link">
+      <a href="../pialert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3527,7 +3360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/pihole/" class="md-nav__link">
+      <a href="../pihole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3554,7 +3387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/plantit/" class="md-nav__link">
+      <a href="../plantit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3581,7 +3414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/plex-tautulli/" class="md-nav__link">
+      <a href="../plex-tautulli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3608,7 +3441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/plex/" class="md-nav__link">
+      <a href="../plex/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3635,7 +3468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/portainer/" class="md-nav__link">
+      <a href="../portainer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3662,7 +3495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/prometheus/" class="md-nav__link">
+      <a href="../prometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3689,7 +3522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/prowlarr/" class="md-nav__link">
+      <a href="../prowlarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3716,7 +3549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/proxmox/" class="md-nav__link">
+      <a href="../proxmox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3743,7 +3576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/proxmoxbackupserver/" class="md-nav__link">
+      <a href="../proxmoxbackupserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3770,7 +3603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/pterodactyl/" class="md-nav__link">
+      <a href="../pterodactyl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3797,7 +3630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/pyload/" class="md-nav__link">
+      <a href="../pyload/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3824,7 +3657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/qbittorrent/" class="md-nav__link">
+      <a href="../qbittorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3851,7 +3684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/qnap/" class="md-nav__link">
+      <a href="../qnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3878,7 +3711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/radarr/" class="md-nav__link">
+      <a href="../radarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3905,7 +3738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/readarr/" class="md-nav__link">
+      <a href="../readarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3932,7 +3765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/romm/" class="md-nav__link">
+      <a href="../romm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3959,7 +3792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/rutorrent/" class="md-nav__link">
+      <a href="../rutorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3986,7 +3819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/sabnzbd/" class="md-nav__link">
+      <a href="../sabnzbd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4013,7 +3846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/scrutiny/" class="md-nav__link">
+      <a href="../scrutiny/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4040,7 +3873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/sonarr/" class="md-nav__link">
+      <a href="../sonarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4067,7 +3900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/speedtest-tracker/" class="md-nav__link">
+      <a href="../speedtest-tracker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4094,7 +3927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/stash/" class="md-nav__link">
+      <a href="../stash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4121,7 +3954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/syncthing-relay-server/" class="md-nav__link">
+      <a href="../syncthing-relay-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4148,7 +3981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/tailscale/" class="md-nav__link">
+      <a href="../tailscale/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4175,7 +4008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/tdarr/" class="md-nav__link">
+      <a href="../tdarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4202,7 +4035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/traefik/" class="md-nav__link">
+      <a href="../traefik/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4229,7 +4062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/transmission/" class="md-nav__link">
+      <a href="../transmission/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4256,7 +4089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/truenas/" class="md-nav__link">
+      <a href="../truenas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4283,7 +4116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/tubearchivist/" class="md-nav__link">
+      <a href="../tubearchivist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4310,7 +4143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/unifi-controller/" class="md-nav__link">
+      <a href="../unifi-controller/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4337,7 +4170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/unmanic/" class="md-nav__link">
+      <a href="../unmanic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4364,7 +4197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/uptime-kuma/" class="md-nav__link">
+      <a href="../uptime-kuma/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4391,7 +4224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/uptimerobot/" class="md-nav__link">
+      <a href="../uptimerobot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4418,7 +4251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/urbackup/" class="md-nav__link">
+      <a href="../urbackup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4445,7 +4278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/watchtower/" class="md-nav__link">
+      <a href="../watchtower/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4472,7 +4305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/whatsupdocker/" class="md-nav__link">
+      <a href="../whatsupdocker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4499,7 +4332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/services/xteve/" class="md-nav__link">
+      <a href="../xteve/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4581,7 +4414,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../widgets/info/" class="md-nav__link ">
+            <a href="../../info/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4624,7 +4457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/datetime/" class="md-nav__link">
+      <a href="../../info/datetime/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4651,7 +4484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/glances/" class="md-nav__link">
+      <a href="../../info/glances/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4678,7 +4511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/greeting/" class="md-nav__link">
+      <a href="../../info/greeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4705,7 +4538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/kubernetes/" class="md-nav__link">
+      <a href="../../info/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4732,7 +4565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/logo/" class="md-nav__link">
+      <a href="../../info/logo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4759,7 +4592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/longhorn/" class="md-nav__link">
+      <a href="../../info/longhorn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4786,7 +4619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/openmeteo/" class="md-nav__link">
+      <a href="../../info/openmeteo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4813,7 +4646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/openweathermap/" class="md-nav__link">
+      <a href="../../info/openweathermap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4840,7 +4673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/resources/" class="md-nav__link">
+      <a href="../../info/resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4867,7 +4700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/search/" class="md-nav__link">
+      <a href="../../info/search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4894,7 +4727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/unifi_controller/" class="md-nav__link">
+      <a href="../../info/unifi_controller/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4921,7 +4754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../widgets/info/weather/" class="md-nav__link">
+      <a href="../../info/weather/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4963,7 +4796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../more/troubleshooting/" class="md-nav__link">
+      <a href="../../../more/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5018,7 +4851,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../more/" class="md-nav__link ">
+            <a href="../../../more/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -5061,7 +4894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../more/development/" class="md-nav__link">
+      <a href="../../../more/development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5088,7 +4921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../more/translations/" class="md-nav__link">
+      <a href="../../../more/translations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5115,7 +4948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../more/homepage-move/" class="md-nav__link">
+      <a href="../../../more/homepage-move/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5160,144 +4993,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-docker-tls" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Using Docker TLS
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-docker-socket-proxy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Using Docker Socket Proxy
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-socket-directly" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Using Socket Directly
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Services
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automatic-service-discovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Automatic Service Discovery
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#widgets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Widgets
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Docker Swarm
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-homepage-instances" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Multiple Homepage Instances
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ordering" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Ordering
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-stats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Show stats
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -5312,7 +5007,7 @@
                   
 
   
-    <a href="https://github.com/gethomepage/homepage/tree/main/docs/configs/docker.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/crowdsec.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -5320,178 +5015,18 @@
   
 
 
-  <h1>Docker</h1>
+  <h1>Crowdsec</h1>
 
-<p>Docker instances are configured inside the <code>docker.yaml</code> file. Both IP:PORT and Socket connections are supported.</p>
-<p>For IP:PORT, simply make sure your Docker instance <a href="https://gist.github.com/styblope/dc55e0ad2a9848f2cc3307d4819d819f">has been configured</a> to accept API traffic over the HTTP API.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">my-remote-docker</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">192.168.0.101</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2375</span>
+<p>Learn more about <a href="https://crowdsec.net">Crowdsec</a>.</p>
+<p>See the <a href="https://docs.crowdsec.net/docs/local_api/intro/#machines">crowdsec docs</a> for information about registering a machine,
+in most instances you can use the default credentials (<code>/etc/crowdsec/local_api_credentials.yaml</code>).</p>
+<p>Allowed fields: ["alerts", "bans"]</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">crowdsec</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://crowdsechostorip:port</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span><span class="w"> </span><span class="c1"># machine_id in crowdsec</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">passowrd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">password</span>
 </span></code></pre></div>
-<h2 id="using-docker-tls">Using Docker TLS</h2>
-<p>Since Docker supports connecting with TLS and client certificate authentication, you can include TLS details when connecting to the HTTP API. Further details of setting up Docker to accept TLS connections, and generation of the keys and certs can be found <a href="https://docs.docker.com/engine/security/protect-access/#use-tls-https-to-protect-the-docker-daemon-socket">in the Docker documentation</a>. The file entries are relative to the <code>config</code> directory (location of <code>docker.yaml</code> file).</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">my-remote-docker</span><span class="p">:</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">192.168.0.101</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">275</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">tls</span><span class="p">:</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">keyFile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tls/key.pem</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">caFile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tls/ca.pem</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">certFile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tls/cert.pem</span>
-</span></code></pre></div>
-<h2 id="using-docker-socket-proxy">Using Docker Socket Proxy</h2>
-<p>Due to security concerns with exposing the docker socket directly, you can use a <a href="https://github.com/Tecnativa/docker-socket-proxy">docker-socket-proxy</a> container to expose the docker socket on a more restricted and secure API.</p>
-<p>Here is an example docker-compose file that will expose the docker socket, and then connect to it from the homepage container:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">dockerproxy</span><span class="p">:</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.io/tecnativa/docker-socket-proxy:latest</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dockerproxy</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">environment</span><span class="p">:</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CONTAINERS=1</span><span class="w"> </span><span class="c1"># Allow access to viewing containers</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SERVICES=1</span><span class="w"> </span><span class="c1"># Allow access to viewing services (necessary when using Docker Swarm)</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TASKS=1</span><span class="w"> </span><span class="c1"># Allow access to viewing tasks (necessary when using Docker Swarm)</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POST=0</span><span class="w"> </span><span class="c1"># Disallow any POST operations (effectively read-only)</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nt">ports</span><span class="p">:</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1:2375:2375</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock:ro</span><span class="w"> </span><span class="c1"># Mounted as read-only</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nt">homepage</span><span class="p">:</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.io/gethomepage/homepage:latest</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/config:/app/config</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="nt">ports</span><span class="p">:</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3000:3000</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-</span></code></pre></div>
-<p>Then, inside of your <code>docker.yaml</code> settings file, you'd configure the docker instance like so:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">my-docker</span><span class="p">:</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dockerproxy</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2375</span>
-</span></code></pre></div>
-<h2 id="using-socket-directly">Using Socket Directly</h2>
-<p>If you'd rather use the socket directly, first make sure that you're passing the local socket into the Docker container.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>In order to use the socket directly homepage must be running as root</p>
-</div>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">homepage</span><span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.io/gethomepage/homepage:latest</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/config:/app/config</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock</span><span class="w"> </span><span class="c1"># pass local proxy</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nt">ports</span><span class="p">:</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3000:3000</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-</span></code></pre></div>
-<p>If you're using <code>docker run</code>, this would be <code>-v /var/run/docker.sock:/var/run/docker.sock</code>.</p>
-<p>Then, inside of your <code>docker.yaml</code> settings file, you'd configure the docker instance like so:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">my-docker</span><span class="p">:</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">socket</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock</span>
-</span></code></pre></div>
-<h2 id="services">Services</h2>
-<p>Once you've configured your docker instances, you can then apply them to your services, to get stats and status reporting shown.</p>
-<p>Inside of the service you'd like to connect to docker:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Emby</span><span class="p">:</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">emby.png</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;http://emby.home/&quot;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Media server</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-docker</span><span class="w"> </span><span class="c1"># The docker server that was configured</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">emby</span><span class="w"> </span><span class="c1"># The name of the container you&#39;d like to connect</span>
-</span></code></pre></div>
-<h2 id="automatic-service-discovery">Automatic Service Discovery</h2>
-<p>Homepage features automatic service discovery for containers with the proper labels attached, all configuration options can be applied using dot notation, beginning with <code>homepage</code>.</p>
-<p>Below is an example of the same service entry shown above, as docker labels.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">services</span><span class="p">:</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">emby</span><span class="p">:</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lscr.io/linuxserver/emby:latest</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">emby</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8096:8096</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.group=Media</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.name=Emby</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.icon=emby.png</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.href=http://emby.home/</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.description=Media server</span>
-</span></code></pre></div>
-<p>When your Docker instance has been properly configured, this service will be automatically discovered and added to your Homepage. <strong>You do not need to specify the <code>server</code> or <code>container</code> values, as they will be automatically inferred.</strong></p>
-<p><strong>When using docker swarm use <em>deploy/labels</em></strong></p>
-<h2 id="widgets">Widgets</h2>
-<p>You may also configure widgets, along with the standard service entry, again, using dot notation.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">labels</span><span class="p">:</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.group=Media</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.name=Emby</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.icon=emby.png</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.href=http://emby.home/</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.description=Media server</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.type=emby</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.url=http://emby.home</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.key=yourembyapikeyhere</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.fields=[&quot;field1&quot;,&quot;field2&quot;]</span><span class="w"> </span><span class="c1"># optional</span>
-</span></code></pre></div>
-<p>You can add specify fields for e.g. the <a href="../../widgets/services/customapi/">CustomAPI</a> widget by using array-style dot notation:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">labels</span><span class="p">:</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.group=Media</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.name=Emby</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.icon=emby.png</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.href=http://emby.home/</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.description=Media server</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.type=customapi</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.url=http://argus.service/api/v1/service/summary/emby</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.mappings[0].label=Deployed Version</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.mappings[0].field.status=deployed_version</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.mappings[1].label=Latest Version</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.widget.mappings[1].field.status=latest_version</span>
-</span></code></pre></div>
-<h2 id="docker-swarm">Docker Swarm</h2>
-<p>Docker swarm is supported and Docker services are specified with the same <code>server</code> and <code>container</code> notation. To enable swarm support you will need to include a <code>swarm</code> setting in your docker.yaml, e.g.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">my-docker</span><span class="p">:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nt">socket</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="nt">swarm</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span></code></pre></div>
-<p>For the automatic service discovery to discover all services it is important that homepage should be deployed on a manager node. Set deploy requirements to the master node in your stack yaml config, e.g.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="l l-Scalar l-Scalar-Plain">....</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">deploy</span><span class="p p-Indicator">:</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="nt">placement</span><span class="p">:</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">      </span><span class="nt">constraints</span><span class="p">:</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node.role == manager</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="nn">...</span>
-</span></code></pre></div>
-<p>In order to detect every service within the Docker swarm it is necessary that service labels should be used and not container labels. Specify the homepage labels as:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="l l-Scalar l-Scalar-Plain">....</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">deploy</span><span class="p p-Indicator">:</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.icon=foobar</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nn">...</span>
-</span></code></pre></div>
-<h2 id="multiple-homepage-instances">Multiple Homepage Instances</h2>
-<p>The optional field <code>instanceName</code> can be configured in <a href="../settings/#instance-name">settings.md</a> to differentiate between multiple homepage instances.</p>
-<p>To limit a label to an instance, insert <code>.instance.{{instanceName}}</code> after the <code>homepage</code> prefix.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nt">labels</span><span class="p">:</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.group=Media</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.name=Emby</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.icon=emby.png</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.instance.internal.href=http://emby.lan/</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.instance.public.href=https://emby.mydomain.com/</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage.description=Media server</span>
-</span></code></pre></div>
-<h2 id="ordering">Ordering</h2>
-<p>As of v0.6.4 discovered services can include an optional <code>weight</code> field to determine sorting such that:</p>
-<ul>
-<li>Default weight for discovered services is 0</li>
-<li>Default weight for configured services is their index within their group scaled by 100, i.e. (index + 1) * 100</li>
-<li>If two items have the same weight value, then they will be sorted by name</li>
-</ul>
-<h2 id="show-stats">Show stats</h2>
-<p>You can show the docker stats by clicking the status indicator but this can also be controlled per-service with:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Example Service</span><span class="p">:</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="nt">showStats</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span></code></pre></div>
-<p>Also see the settings for <a href="./#show-docker-stats">show docker stats</a>.</p>
 
 
 
@@ -5578,12 +5113,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.action.edit", "search.suggest", "search.share", "content.code.copy", "content.code.select", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "content.action.edit", "search.suggest", "search.share", "content.code.copy", "content.code.select", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.8e8db93a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8e8db93a.min.js"></script>
       
-        <script src="../../scripts/extra.js"></script>
+        <script src="../../../scripts/extra.js"></script>
       
     
   </body>
