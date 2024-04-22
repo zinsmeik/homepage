@@ -5098,10 +5098,8 @@
 Make sure to set Intent to "API Token".</p>
 <p>The account you made the API token for also needs the following <strong>Assigned global permissions</strong> in Authentik:</p>
 <ul>
-<li>authentik Core</li>
-<li>User</li>
-<li>authentik Events</li>
-<li>Event</li>
+<li>authentik Core -&gt; Can view User (Model: User)</li>
+<li>authentik Events -&gt; Can view Event (Model: Event)</li>
 </ul>
 <p>Allowed fields: <code>["users", "loginsLast24H", "failedLoginsLast24H"]</code>.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
