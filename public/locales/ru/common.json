@@ -280,7 +280,7 @@
     "netalertx": {
         "total": "Всего",
         "connected": "Connected",
-        "new_devices": "New Devices",
+        "new_devices": "Новое устройство",
         "down_alerts": "Down Alerts"
     },
     "pihole": {
@@ -875,6 +875,6 @@
     },
     "crowdsec": {
         "alerts": "Предупреждения",
-        "bans": "Bans"
+        "bans": "Блокировки"
     }
 }
